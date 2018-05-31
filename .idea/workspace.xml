@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ca9ea1-9356-4399-a252-0a32c1c5d1d9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_fatboyindustrial_gson_javatime_serialisers_gson_javatime_serialisers_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_json_json_20140107.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/json/inputs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/y2015/day1/input.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Functions.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/advent_of_code_kotlin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/advent_of_code_kotlin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/advent_of_code_kotlin/y2015/day1/Day1_NotQuiteLispKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/advent_of_code_kotlin/y2015/day1/Day1_NotQuiteLispKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/y2015/day1/day1_NotQuiteLisp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/y2015/day1/day1_NotQuiteLisp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/json/inputs.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/inputs.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,13 +17,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="day1_NotQuiteLisp.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="day1_NotQuiteLisp.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/y2015/day1/day1_NotQuiteLisp.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+              <caret line="13" column="63" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="63" />
               <folding>
                 <element signature="e#20#121#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Functions.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/utils/Functions.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#15#134#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,11 +44,8 @@
       <file leaf-file-name="inputs.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/json/inputs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="136">
               <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding>
-                <element signature="e#44#7069#0" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -70,8 +75,9 @@
         <option value="$PROJECT_DIR$/src/y2015/day1_NotQuiteLisp.kt" />
         <option value="$PROJECT_DIR$/src/y2015/not_quite_lisp.md" />
         <option value="$PROJECT_DIR$/src/y2015/day1/input.json" />
-        <option value="$PROJECT_DIR$/assets/json/inputs.json" />
         <option value="$PROJECT_DIR$/src/y2015/day1/day1_NotQuiteLisp.kt" />
+        <option value="$PROJECT_DIR$/assets/json/inputs.json" />
+        <option value="$PROJECT_DIR$/src/utils/Functions.kt" />
       </list>
     </option>
   </component>
@@ -112,7 +118,7 @@
               <item name="advent_of_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="advent_of_code" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="advent_of_code" type="b2602c69:ProjectViewProjectNode" />
@@ -123,8 +129,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,13 +240,12 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3290735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32961783" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.33067092" />
       <window_info id="Capture Tool" order="2" />
@@ -253,39 +258,36 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Designer" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25379938" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32961783" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Learn" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33067092" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/y2015/day1/day1_NotQuiteLisp.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="65" lean-forward="true" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+          <folding>
+            <element signature="e#20#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/json/inputs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/y2015/day1/day1_NotQuiteLisp.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -307,16 +309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/json/inputs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="e#44#7069#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/y2015/day1/input.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -327,9 +319,26 @@
     <entry file="file://$PROJECT_DIR$/src/y2015/day1/day1_NotQuiteLisp.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+          <caret line="13" column="63" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="63" />
           <folding>
             <element signature="e#20#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/json/inputs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Functions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#15#134#0" expanded="true" />
           </folding>
         </state>
       </provider>
