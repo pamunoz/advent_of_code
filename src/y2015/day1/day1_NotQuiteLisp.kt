@@ -1,14 +1,12 @@
 package y2015.day1
 
+import utils.inputFromFile
 
-import utils.getInput
 
 fun main(args: Array<String>) {
-    val input = getInput(2015, 1, 0)
+    val input = inputFromFile(2015, 1)
     println("First Answer: ${firstAnswer(input)}")
     println("Second Answer: ${secondAnswer(input)}")
-
-
 }
 
 fun firstAnswer(input: String): Int {
@@ -38,3 +36,4 @@ fun secondAnswer(input: String): Int {
     }
     return answer
 }
+
