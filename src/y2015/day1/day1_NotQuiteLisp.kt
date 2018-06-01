@@ -5,7 +5,36 @@ import utils.getInput
 
 fun main(args: Array<String>) {
     val input = getInput(2015, 1, 0)
-    println(input)
-    val input2 = getInput(2018, 2, 0)
-    println(input2)
+    println("First Answer: ${firstAnswer(input)}")
+    println("Second Answer: ${secondAnswer(input)}")
+
+
+}
+
+fun firstAnswer(input: String): Int {
+    var anwer = 0
+    input.forEach {
+        if (it == '(') {
+            anwer++
+        } else {
+            anwer--
+        }
+    }
+    return anwer
+}
+
+fun secondAnswer(input: String): Int {
+    var answer = 0
+    var floor = 0
+    input.forEach {
+        answer++
+        if (it == '(') {
+            floor++
+            if (floor < 0) return answer
+        } else {
+            floor--
+            if (floor < 0) return answer
+        }
+    }
+    return answer
 }
