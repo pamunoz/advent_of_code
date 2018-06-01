@@ -1,18 +1,11 @@
 package y2015.day1
 
-import java.io.BufferedReader
-import java.io.File
-import java.io.InputStreamReader
-import java.util.*
 
+import utils.getInput
 
 fun main(args: Array<String>) {
-    readFile()
-}
-
-fun readFile() {
-    val input: Scanner = Scanner(File("assets/json/inputs.json"))
-    val b: StringBuilder = StringBuilder()
-    val answer: String = input.nextLine()
-    println(answer)
+    val input = getInput(2015, 1, 0)
+    println(input)
+    val input2 = getInput(2018, 2, 0)
+    println(input2)
 }

@@ -7,19 +7,21 @@ import java.io.File
 import java.io.FileReader
 
 object Constants {
-    val FILE_INPUTS_PATH = "assets/json/inputs.json"
+    const val FILE_INPUTS_PATH = "assets/json/inputs.json"
 }
 
-fun readJsonFile() {
-    val parser: JSONParser = JSONParser()
+fun getInput(puzzleYear: Long, puzzleDay: Long, index: Int): String {
+    val parser = JSONParser()
     val array: JSONArray = parser.parse(FileReader(Constants.FILE_INPUTS_PATH)) as JSONArray
+    var input = ""
     array.forEach {
         val puzzle: JSONObject = it as JSONObject
-        val year: Int = puzzle.get("year") as Int
-        val day: Int = puzzle.get("day") as Int
-        val inputs: JSONArray = puzzle.get("inputs") as JSONArray
-        val input: String = inputs[0] as String
+        val year: Long = puzzle["year"] as Long
+        val day: Long = puzzle["day"] as Long
+        val inputs: JSONArray = puzzle["inputs"] as JSONArray
+        if (year == puzzleYear && day == puzzleDay) {
+            input = inputs[index] as String
+        }
     }
+    return input
 }
-
-data class Puzzle(val year: Int, val day: Int, val inputs: Any)
